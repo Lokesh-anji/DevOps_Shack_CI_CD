@@ -26,7 +26,7 @@
    - It's useful for tasks like deploying applications to Kubernetes from Jenkins jobs.
    - Install it through the plugin manager.
 
-6. **Kubernetes**:
+6. **Kubernetes** ,**Kubernetes client API**, **Kubernetes credentials**:
    - This plugin integrates Jenkins with Kubernetes by allowing Jenkins agents to run as pods within a Kubernetes cluster.
    - It provides dynamic scaling and resource optimization capabilities for Jenkins builds.
    - Install it from the Jenkins plugin manager.
