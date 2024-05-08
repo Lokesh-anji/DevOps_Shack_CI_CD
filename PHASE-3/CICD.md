@@ -45,15 +45,23 @@ After installing these plugins, you may need to configure them according to your
 
 ## Configure Above Plugins in Jenkins as per video
 1.Goto manage jenkins --> tools -->add jdk
+
+
 <img width="365" alt="image" src="https://github.com/Lokesh-anji/DevOps_Shack_CI_CD/assets/62313968/3f5dc57e-1d7f-4c7f-beb2-6bc011d310be">
 
 2. Add Sonar-scanner.
+
+   
    <img width="513" alt="image" src="https://github.com/Lokesh-anji/DevOps_Shack_CI_CD/assets/62313968/e39f32e3-130e-4931-8db7-9ecf50c056e9">
 
 3.Add maven
+
+
 <img width="344" alt="image" src="https://github.com/Lokesh-anji/DevOps_Shack_CI_CD/assets/62313968/cfe34074-6c61-434f-914f-7badbe364f83">
 
 4.Docker:
+
+
 <img width="377" alt="image" src="https://github.com/Lokesh-anji/DevOps_Shack_CI_CD/assets/62313968/72965af5-a8bf-4a49-ace4-d5876e299855">
 
 ## Pipeline 
