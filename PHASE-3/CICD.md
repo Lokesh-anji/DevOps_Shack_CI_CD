@@ -64,6 +64,9 @@ After installing these plugins, you may need to configure them according to your
 
 <img width="377" alt="image" src="https://github.com/Lokesh-anji/DevOps_Shack_CI_CD/assets/62313968/72965af5-a8bf-4a49-ace4-d5876e299855">
 
+
+5.Install trivy on the jenkins.
+
 ## Pipeline 
 
 ```groovy
