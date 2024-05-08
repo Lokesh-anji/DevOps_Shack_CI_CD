@@ -105,7 +105,7 @@ pipeline {
     agent any
     
     tools{
-        jdk 'jdk17'
+        jdk 'jdk-17'
         maven 'maven'
     }
     
@@ -162,7 +162,7 @@ pipeline {
          
          stage('publish-nexus') {
             steps {
-                withMaven(globalMavenSettingsConfig: 'global-settings', jdk: 'jdk17', maven: 'maven', mavenSettingsConfig: '', traceability: true) {
+                withMaven(globalMavenSettingsConfig: 'global-settings', jdk: 'jdk-17', maven: 'maven', mavenSettingsConfig: '', traceability: true) {
                     sh 'mvn deploy'
 }
             }
@@ -196,14 +196,14 @@ pipeline {
         }
         stage('Deploy to k8s') {
             steps {
-                withKubeConfig(caCertificate: '', clusterName: 'eks2.ap-south-1.eksctl.io', contextName: '', credentialsId: 'k8-cred', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://B415F45F295963F3E2DC1A71B0069998.gr7.ap-south-1.eks.amazonaws.com') {
+                withKubeConfig(caCertificate: '', clusterName: 'eks2.ap-south-1.eksctl.io', contextName: '', credentialsId: 'k8-cred', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://B415F45F295963F3E2DC1A71B0.gr7.ap-south-1.eks.amazonaws.com') {
                     sh "kubectl apply -f deployment-service.yaml"
            }
             }
         }
          stage('Verify deployment') {
             steps {
-                withKubeConfig(caCertificate: '', clusterName: 'eks2.ap-south-1.eksctl.io', contextName: '', credentialsId: 'k8-cred', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://B415F45F295963F3E2DC1A71B0069998.gr7.ap-south-1.eks.amazonaws.com') {
+                withKubeConfig(caCertificate: '', clusterName: 'eks2.ap-south-1.eksctl.io', contextName: '', credentialsId: 'k8-cred', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://B415F45F295963F3E2DC1A71B0069.gr7.ap-south-1.eks.amazonaws.com') {
                     sh "kubectl get pod -n webapps"
                     sh "kubectl get svc -n webapps"
            }
