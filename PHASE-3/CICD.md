@@ -45,6 +45,10 @@ After installing these plugins, you may need to configure them according to your
 
 ## Configure Above Plugins in Jenkins as per video
 
+<img width="365" alt="image" src="https://github.com/Lokesh-anji/DevOps_Shack_CI_CD/assets/62313968/3f5dc57e-1d7f-4c7f-beb2-6bc011d310be">
+
+
+
 ## Pipeline 
 
 ```groovy
